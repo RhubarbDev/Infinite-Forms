@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Infinite Forms",
+    "version": "1.0",
+    "description": "Generates random questions in google forms.",
+
+    "content_scripts": [
+        {
+            "matches": ["*://docs.google.com/forms/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
